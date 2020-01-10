@@ -1,0 +1,6 @@
+---
+sxhkd_bindings:
+  - name: Launch tilix
+    bindings: super + Return
+    exec: tilix
+    

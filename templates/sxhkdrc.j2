@@ -1,0 +1,8 @@
+{% for bind in sxhkd_bindings %}
+{% if bind.name is defined %}
+# {{ bind.name }}
+{% endif %}
+{{ bind.binding }}
+        {{ bind.exec }}
+
+{% endfor %}

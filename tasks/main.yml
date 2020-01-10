@@ -1,0 +1,21 @@
+---
+- name: Ensure sxhkd is installed
+  aur:
+    name: sxhkd
+  tags:
+    - sxhkd
+
+- name: Ensure the config directory exists
+  file:
+    path: "{{ ansible_env.HOME }}/.config/sxhkd"
+    state: directory
+  tags:
+    - sxhkd
+
+- name: Generate sxhkdrc
+  template:
+    src: sxhkdrc.j2
+    dest: "{{ ansible_env.HOME }}/.config/sxhkd/sxhkdrc"
+    mode: 0755
+  tags:
+    - sxhkd
