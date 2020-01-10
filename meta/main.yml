@@ -1,4 +1,5 @@
 galaxy_info:
+  role_name: sxhkd
   author: Joao Pedro de Lacerda
   description: simple sxhkd installation and configuration for Archlinux
 

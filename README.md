@@ -48,7 +48,7 @@ Example Playbook
 ```
     - hosts: localhost
       roles:
-         - { role: jpedrodelacerda.ansible-sxhkd }
+         - { role: jpedrodelacerda.sxhkd }
 ```
 
 License
